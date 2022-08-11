@@ -16,7 +16,7 @@ public class UnLockSendRequestDto {
         if (!StringUtils.isEmpty(array[1])) {
             this.uid = String.valueOf(Long.parseLong(array[1], 16));
         }else{
-            this.uid = "";
+            this.uid = "0";
         }
     }
 

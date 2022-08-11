@@ -11,10 +11,15 @@ public class LockedUploadRequestDto {
     private double longitude;
     private double latitude;
 
-    public LockedUploadRequestDto(){}
-    public LockedUploadRequestDto(String[] array){
+    public LockedUploadRequestDto() {
+    }
+
+    public LockedUploadRequestDto(String[] array) {
         this.time = array[0];
         this.uid = array[1];
+        if (this.uid == null || this.uid.equals("")) {
+            this.uid = "0";
+        }
     }
 
     @Override
