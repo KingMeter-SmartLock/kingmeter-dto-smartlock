@@ -20,4 +20,5 @@ public class LockMalfunctionUploadRequestDto {
         this.flb = array[4];
     }
 
+
 }
